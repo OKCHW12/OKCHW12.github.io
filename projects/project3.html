@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проєкт: Теплий Мінімалізм</title>
+    <title>Проект: Теплий Мінімалізм</title>
+    <!-- ПРАВИЛЬНИЙ ШЛЯХ до CSS-файлу -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <nav class="main-nav">
+                <!-- Посилання веде назад на головну сторінку -->
                 <a href="../index.html" class="logo">trylyly</a>
                 <ul>
+                    <!-- Посилання ведуть на секції головної сторінки -->
+                    <li><a href="../index.html#home">Головна</a></li>
                     <li><a href="../index.html#about">Про мене</a></li>
                     <li><a href="../index.html#portfolio">Портфоліо</a></li>
                     <li><a href="../index.html#contact">Контакти</a></li>
@@ -20,26 +25,21 @@
         </div>
     </header>
 
-    <main>
-        <section class="project-page section">
-            <div class="container">
-                <h1 class="project-title">Теплий Мінімалізм</h1>
-                <p class="project-description">
-                    Сучасний мінімалізм з панорамним видом на місто. Лаконічний камін, чисті лінії та тепла палітра теракотових і оливкових відтінків створюють спокій та стиль.
-                </p>
+    <main class="project-page">
+        <section class="container">
+            <h1 class="project-title">Теплий Мінімалізм</h1>
+            <p class="project-description">
+                Сучасний мінімалізм з панорамним видом на місто. Головний акцент — на автоматизованих шторах, системі керування освітленням та прихованій мультимедійній системі, що дозволяє зберегти простір чистим та функціональним.
+            </p>
 
-                <div class="photo-gallery">
-                    <div class="gallery-item"><img src="../images/project3/1.jpg" alt="Фото 1"></div>
-                    <div class="gallery-item"><img src="../images/project3/2.jpg" alt="Фото 2"></div>
-                    <div class="gallery-item"><img src="../images/project3/3.jpg" alt="Фото 3"></div>
-                    <div class="gallery-item"><img src="../images/project3/4.jpg" alt="Фото 4"></div>
-                    <div class="gallery-item"><img src="../images/project3/5.jpg" alt="Фото 5"></div>
-                    <div class="gallery-item"><img src="../images/project3/6.jpg" alt="Фото 6"></div>
-                </div>
+            <div class="photo-gallery">
+                 <!-- Припускаю, що у вас є відповідні фото в папці project3 -->
+                <div class="gallery-item"><img src="../images/project3/1.jpg" alt="Теплий Мінімалізм - Фото 1"></div>
+                <!-- Додайте сюди інші зображення для цього проєкту, якщо вони є -->
+            </div>
 
-                <div class="back-link-wrapper">
-                    <a href="../index.html#portfolio" class="btn">Назад до портфоліо</a>
-                </div>
+            <div class="back-link-wrapper">
+                <a href="../index.html#portfolio" class="btn">Назад до портфоліо</a>
             </div>
         </section>
     </main>
@@ -49,5 +49,8 @@
             <p>&copy; 2025 Устименко Олег. Всі права захищено.</p>
         </div>
     </footer>
+
+    <!-- ПРАВИЛЬНИЙ ШЛЯХ до JS-файлу -->
+    <script src="../js/script.js"></script>
 </body>
 </html>
