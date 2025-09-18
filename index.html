@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Устименко Олег Володимирович</title>
+    <title>Устименко Олег Володимирович | Інженер розумних просторів</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <header class="header">
         <div class="container">
             <nav class="main-nav">
                 <a href="#home" class="logo">trylyly</a>
                 <ul>
-                    <!-- ===== ДОДАНО НОВИЙ РЯДОК ===== -->
-                    <li><a href="#home">Головна</a></li> 
-                    <li><a href="#about">Про мене</a></li>
-                    <li><a href="#portfolio">Портфоліо</a></li>
-                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#home" class="nav-link">Головна</a></li> 
+                    <li><a href="#about" class="nav-link">Про мене</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфоліо</a></li>
+                    <li><a href="#contact" class="nav-link">Контакти</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section id="home" class="hero section">
+            <canvas id="particle-canvas"></canvas>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="fade-in">Устименко Олег Володимирович</h1>
-                    <p class="fade-in-delay-1">Інженер-проєктувальник розумних просторів</p>
-                    <a href="#portfolio" class="btn fade-in-delay-2">Переглянути роботи</a>
+                    <h1 class="animate-hero">Устименко Олег Володимирович</h1>
+                    <p class="animate-hero">Інженер-проєктувальник розумних просторів</p>
+                    <div class="magnetic-wrapper animate-hero">
+                        <a href="#portfolio" class="btn">Переглянути роботи</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -38,10 +42,7 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>Я — інженер, який проєктує не просто кімнати, а розумні простори для життя. Моя робота — поєднати дизайн інтер'єру з новітньою електронікою, створюючи гармонію між красою та технологіями. Маючи інженерний досвід, я усуваю конфлікт між дизайнерами та технічними спеціалістами. Я одразу проєктую і естетику, і функціональну "начинку": від ідеального освітлення та клімат-контролю до мультимедійних систем. Мій підхід починається з вашого способу життя. На основі цього я створюю єдиний проєкт, де кожна розетка, кожен вимикач і кожен датчик ідеально вписані в дизайн і працюють як єдина система для вашого комфорту. Коротко кажучи, я перетворюю звичайні приміщення на технологічні та затишні оселі, де все продумано до дрібниць.</p>
-                        <p>(додати більше деталей про вашу освіту, сертифікати або професійні досягнення.)</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/photo.jpg" alt="Устименко Олег Володимирович">
+                        <p><strong>(додати більше деталей про вашу освіту, сертифікати або професійні досягнення.)</strong></p>
                     </div>
                 </div>
             </div>
@@ -49,29 +50,13 @@
         <section id="portfolio" class="portfolio section">
             <div class="container">
                 <h2 class="section-title">Портфоліо</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="images/project1/1.jpg" alt="Лондонський Шик">
-                        <div class="portfolio-item-overlay">
-                            <h3>Лондонський Шик</h3>
-                            <p>Класична симетрія з каміном та вишуканими меблями.</p>
-                            <a href="projects/project1.html">Переглянути</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="images/project2/1.jpg" alt="Творча Гармонія">
-                        <div class="portfolio-item-overlay">
-                            <h3>Творча Гармонія</h3>
-                            <p>Затишний mid-century простір з творчим характером.</p>
-                            <a href="projects/project2.html">Переглянути</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="images/project3/1.jpg" alt="Теплий Мінімалізм">
-                        <div class="portfolio-item-overlay">
-                            <h3>Теплий Мінімалізм</h3>
-                            <p>Сучасний мінімалізм з панорамним видом на місто.</p>
-                            <a href="projects/project3.html">Переглянути</a>
+                <p class="portfolio-intro">Для ознайомлення з моїми роботами, відвідайте мою сторінку в Instagram!</p>
+                <div class="contact-details">
+                    <div class="contact-card">
+                        <div class="copy-container">
+                            <p class="contact-label">Мій Instagram</p>
+                            <p class="copy-text" data-text-to-copy="аааа">аааа</p>
+                            <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
                         </div>
                     </div>
                 </div>
@@ -81,9 +66,27 @@
             <div class="container">
                 <h2 class="section-title">Зв'яжіться зі мною</h2>
                 <div class="contact-details">
-                    <a href="mailto:Toto@gmail.lyi">Toto@gmail.lyi</a>
-                    <a href="tel:+364398393922">+364 3 9 839 39 22</a>
-                    <a>@ttotoffyytr</a>
+                    <div class="contact-card">
+                        <div class="copy-container">
+                            <p class="contact-label">Моя пошта</p>
+                            <span class="copy-text" data-text-to-copy="Toto@gmail.lyi">Toto@gmail.lyi</span>
+                            <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="copy-container">
+                            <p class="contact-label">Мій номер телефону</p>
+                            <span class="copy-text" data-text-to-copy="+364398393922">+364 3 9 839 39 22</span>
+                            <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                         <div class="copy-container">
+                             <p class="contact-label">Мій Telegram</p>
+                             <span class="copy-text" data-text-to-copy="@ttotoffyytr">@ttotoffyytr</span>
+                             <span class="copy-tooltip">Натисніть, щоб скопіювати</span>
+                         </div>
+                    </div>
                 </div>
             </div>
         </section>
